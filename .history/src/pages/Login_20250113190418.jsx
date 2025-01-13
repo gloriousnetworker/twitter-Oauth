@@ -48,7 +48,7 @@ const Login = () => {
   return (
     <div>
       <h1>Login with Twitter</h1>
-      <h1>And It worked!</h1>
+      <h1
       <TwitterLogin
         loginUrl="https://twitter-oauth-app-wheat.vercel.app/api/v1/auth/twitter"
         onFailure={handleTwitterFailure}
