@@ -1,19 +1,19 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
-import OTP from "./pages/OTP";
 import Dashboard from "./pages/Dashboard";
+import Callback from "./pages/Callback";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/otp" element={<OTP />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/callback" element={<Callback />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
